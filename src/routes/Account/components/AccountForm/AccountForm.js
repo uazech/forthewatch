@@ -14,7 +14,6 @@ function AccountForm({
   classes,
   auth
 }) {
-  this.props.initialize({ displayName: 'some value here' })
   return (
     <form className={classes.root} onSubmit={handleSubmit}>
       <h4>Account</h4>

@@ -1,0 +1,35 @@
+{
+  "projects": {
+    "default": "for-the-watch",
+    "master": "for-the-watch",
+    "prod": "for-the-watch"
+  },
+  "ci": {
+    "createConfig": {
+      "master": {
+        "env": "staging",
+        "firebase": {
+          "apiKey": "${STAGE_FIREBASE_API_KEY}",
+          "authDomain": "for-the-watch.firebaseapp.com",
+          "databaseURL": "https://for-the-watch.firebaseio.com",
+          "projectId": "for-the-watch",
+          "storageBucket": "for-the-watch.appspot.com"
+        },
+        "sentryDsn": "${SENTRY_DSN}",
+        "analyticsTrackingId": "${GA_TRACKING_ID}"
+      },
+      "prod": {
+        "env": "production",
+        "firebase": {
+          "apiKey": "${PROD_FIREBASE_API_KEY}",
+          "authDomain": "for-the-watch.firebaseapp.com",
+          "databaseURL": "https://for-the-watch.firebaseio.com",
+          "projectId": "for-the-watch",
+          "storageBucket": "for-the-watch.appspot.com"
+        },
+        "sentryDsn": "${SENTRY_DSN}",
+        "analyticsTrackingId": "${GA_TRACKING_ID}"
+      }
+    }
+  }
+}

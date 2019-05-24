@@ -13,9 +13,12 @@ import { setErrorUser } from '../utils/errorHandler'
 import makeRootReducer from './reducers'
 import {
   firebase as fbConfig,
-  reduxFirebase as rrfConfig,
   env
 } from '../config'
+
+const rrfConfig = {
+  enableLogging: false, // enable/disable Firebase Database Logging
+}
 
 export default (initialState = {}) => {
   // ======================================================

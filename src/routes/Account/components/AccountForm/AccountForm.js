@@ -3,12 +3,18 @@ import PropTypes from 'prop-types'
 import { Field } from 'redux-form'
 import Button from '@material-ui/core/Button'
 import { TextField } from 'redux-form-material-ui'
-import ProviderDataForm from '../ProviderDataForm';
+import ProviderDataForm from '../ProviderDataForm'
 // import { connect } from 'react-redux';
 
-
-function AccountForm({ account, handleSubmit, submitting, pristine, classes, auth }) {
-  this.props.initialize({ displayName: 'some value here' });
+function AccountForm({
+  account,
+  handleSubmit,
+  submitting,
+  pristine,
+  classes,
+  auth
+}) {
+  this.props.initialize({ displayName: 'some value here' })
   return (
     <form className={classes.root} onSubmit={handleSubmit}>
       <h4>Account</h4>
@@ -19,8 +25,9 @@ function AccountForm({ account, handleSubmit, submitting, pristine, classes, aut
           fullWidth
           name="displayName"
           component={TextField}
-          label="Display Name"
-        > </Field>
+          label="Display Name">
+          {' '}
+        </Field>
         <Field name="email" label="Email" component={TextField} fullWidth />
         <Field
           name="avatarUrl"

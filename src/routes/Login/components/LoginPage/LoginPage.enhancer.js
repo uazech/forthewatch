@@ -26,9 +26,9 @@ export default compose(
   withHandlers({
     onSubmitFail: props => (formErrs, dispatch, err) =>
       props.showError(formErrs ? 'Form Invalid' : err.message || 'Error'),
-    emailLogin: ({ firebase, showError }) => creds =>
-      {
-        firebase.login(creds).catch(err => showError(err.message))}
+    emailLogin: ({ firebase, showError }) => creds => {
+      firebase.login(creds).catch(err => showError(err.message))
+    }
   }),
   // Add styles as props.classes
   withStyles(styles, { withTheme: true })

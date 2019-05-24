@@ -28,7 +28,13 @@ function Navbar({
           className={classes.flex}
           component={Link}
           to={authExists ? LIST_PATH : '/'}>
-          <span role="img" aria-label="">⌚</span> For the watch <span role="img" aria-label="">⌚</span>
+          <span role="img" aria-label="">
+            ⌚
+          </span>{' '}
+          For the watch{' '}
+          <span role="img" aria-label="">
+            ⌚
+          </span>
         </Typography>
         {authExists ? (
           <AccountMenu

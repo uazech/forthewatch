@@ -13,8 +13,6 @@ export default compose(
   // make the component a redux-form
   reduxForm({ form: ACCOUNT_FORM_NAME }),
 
-  
-
   // add styles as props
   withStyles(styles)
 )

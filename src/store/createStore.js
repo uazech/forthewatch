@@ -11,13 +11,10 @@ import 'firebase/firestore'
 import { setAnalyticsUser } from 'utils/analytics'
 import { setErrorUser } from '../utils/errorHandler'
 import makeRootReducer from './reducers'
-import {
-  firebase as fbConfig,
-  env
-} from '../config'
+import { firebase as fbConfig, env } from '../config'
 
 const rrfConfig = {
-  enableLogging: false, // enable/disable Firebase Database Logging
+  enableLogging: false // enable/disable Firebase Database Logging
 }
 
 export default (initialState = {}) => {

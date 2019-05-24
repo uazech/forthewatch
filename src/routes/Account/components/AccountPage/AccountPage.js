@@ -17,7 +17,6 @@ function AccountPage({ avatarUrl, updateAccount, profile, classes, auth }) {
             />
           </div>
           <div className={classes.meta}>
-          
             <AccountForm
               onSubmit={updateAccount}
               account={profile}

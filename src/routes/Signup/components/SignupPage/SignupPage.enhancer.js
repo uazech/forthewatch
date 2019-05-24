@@ -27,15 +27,14 @@ export default compose(
   withHandlers({
     onSubmitFail: props => (formErrs, dispatch, err) =>
       props.showError(formErrs ? 'Form Invalid' : err.message || 'Error'),
-    emailSignup: ({ firebase, showError }) => creds =>
-      {
-          firebase
+    emailSignup: ({ firebase, showError }) => creds => {
+      firebase
         .createUser(creds, {
           email: creds.email,
           username: creds.username
         })
         .catch(err => showError(err.message))
-      }
+    }
   }),
   // Add styles as props.classes
   withStyles(styles)

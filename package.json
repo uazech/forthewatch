@@ -30,7 +30,7 @@
     "@sentry/browser": "^4.6.4",
     "firebase": "^5.8.6",
     "history": "^4.7.2",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "prop-types": "^15.6.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
